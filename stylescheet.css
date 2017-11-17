@@ -1,12 +1,12 @@
 ul {
     list-style-type: none;
-    margin: 0 25%;
+    margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #333;
     position: fixed;
     top: 0;
-    width: 50%;
+    width: 100%;
 	text-align: center;
 
 }
@@ -28,5 +28,14 @@ li a:hover:not(.active) {
 }
 
 .active {
-    background-color: #4CAF50;
+	animation: color-animation 0.5s linear;
+	background-color: #4CAF50;
 }
+@keyframes color-animation {
+    0% {
+       background: #111;
+    } 
+    100% {
+       background: #4CAF50;
+    } 
+ }
