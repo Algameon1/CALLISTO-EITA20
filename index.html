@@ -1,51 +1,63 @@
-<!DOCTYPE html>
+<DOCTYPE html>
 <html>
 <head>
-	<script src="JavaScript.js" type="text/javascript"> </script>
-	<link rel="stylesheet" href="stylescheet.css">
-	
-</head>
-<body>
+<meta charset="utf-8">
+<link rel="stylesheet" href="design.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<title>skoj</title>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
-window.onscroll= function() {myFunction()};
+$(document).ready(function(){
 
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+    $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+        window.location.hash = hash;
+      });
+    }
+  });
+});
 </script>
-<ul>
-  <li><a id="Befolkning" class="" href="#home">Befolkning</a></li>
-  <li><a id="Klimat" class="" href="#Klimat">Klimat</a></li>
-  <li><a id="Energi" class="" href="#Energi">Energi</a></li>
-  <li><a id="Teknik" class="" href="#Teknik">Teknik</a></li>
-</ul>
-<br>
-	<h1> detta är massa text </h1>
-	<div>
-		<p>
-			
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis feugiat et tellus id ullamcorper. Pellentesque iaculis, nulla in dictum rhoncus, lacus sapien porta tellus, non blandit ligula erat vitae eros. Quisque maximus neque eget est tincidunt, vitae pellentesque odio varius. Duis ut elit blandit, pellentesque massa sed, scelerisque justo. In mattis mauris fermentum est porta euismod. Quisque id diam eu est ultricies accumsan sed vitae felis. Integer accumsan, metus eu tristique varius, velit erat dictum velit, id vulputate sapien metus et risus. Cras non diam lacinia, malesuada urna vel, tristique sapien. Integer interdum, lorem ac malesuada porttitor, neque velit interdum purus, nec pulvinar arcu dolor eu ex. Ut augue lectus, posuere quis neque a, ornare porttitor nisi. Donec molestie ut nisl sed iaculis. Sed at tempus tortor. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-<br> <br>
-		<div id="news"></div>
-Maecenas vitae lectus id ante tempor iaculis. In at porta turpis. Nulla ultricies, nisl vitae blandit ullamcorper, purus nibh ornare nisi, ut euismod mauris nisi sed est. Maecenas turpis velit, ultrices in odio sed, iaculis vestibulum ex. Fusce imperdiet dui eget congue venenatis. Maecenas velit velit, dapibus eu auctor nec, aliquam sed urna. Vivamus sed diam non libero dictum fermentum. Mauris venenatis arcu vitae gravida rhoncus.
-<br><br>
-		<div id="test" class="" onscroll="">
-		Cras rutrum ipsum interdum tempus rutrum. Vivamus eleifend quam vel tellus consectetur, ac tristique nibh pharetra. Nunc hendrerit cursus orci a viverra. Vivamus elementum maximus mi. Curabitur rhoncus nibh erat, at facilisis erat sollicitudin ut. Praesent imperdiet libero vel diam ornare feugiat. Ut nec sapien vitae est posuere ultricies quis nec lacus. Donec tristique volutpat lorem, ac pellentesque mi.
-	</div>
-<br><br>
-Proin risus augue, fermentum in finibus eleifend, sollicitudin efficitur ex. Phasellus ullamcorper mollis lectus. Nunc tortor nulla, lobortis ultrices dui vitae, semper egestas ligula. Aliquam iaculis, sapien in consequat vehicula, tortor mi ultricies lacus, sed luctus nisl velit sed libero. Donec posuere facilisis est, id lobortis tortor. Donec commodo risus sit amet tempus gravida. Integer nec sem molestie, vestibulum mauris eget, luctus odio. Fusce egestas lobortis augue, id pretium elit sollicitudin vitae. Ut pellentesque justo lacus, convallis aliquam urna tincidunt nec. In at semper sem, sed pellentesque diam.
-<br><br>
-Suspendisse bibendum sit amet nibh sit amet vestibulum. Aliquam maximus, lorem sit amet auctor porttitor, ligula enim vulputate dui, sed aliquet elit ipsum a purus. Praesent luctus eget tortor ut egestas. Morbi nec sem id mauris vestibulum elementum eu molestie nisl. Suspendisse mattis est a nisl efficitur luctus. Integer id pretium sapien, sit amet convallis tortor. Nullam nec dictum erat. Praesent orci erat, sodales at consectetur non, hendrerit nec nunc. Aliquam eget magna suscipit, elementum nisl id, tincidunt dolor. Sed tempus fringilla mi, quis placerat metus venenatis quis. Suspendisse potenti. Cras facilisis odio vitae nunc consectetur lacinia.
-<br><br>
-Morbi vel placerat arcu, ac semper elit. Sed vel pellentesque nulla. Praesent consectetur felis purus, eu imperdiet velit pulvinar ultrices. Phasellus gravida posuere purus et condimentum. Phasellus ac ultricies turpis. Quisque vel risus non orci laoreet convallis sit amet at urna. Donec suscipit, nibh vitae euismod tristique, lorem ante aliquam ex, at finibus elit felis eget mi. Curabitur vestibulum metus et dolor varius rhoncus. Donec mollis malesuada arcu, ut lacinia lectus semper sit amet. Pellentesque vestibulum nisl ut metus consectetur condimentum.
-<br><br>
-Vivamus nec ex tellus. Nullam tellus odio, semper sit amet mauris sed, tincidunt scelerisque elit. Aenean vulputate ultricies lorem, vitae varius tellus pharetra a. Fusce ac sapien orci. Nam sed tellus sit amet lorem bibendum egestas. Nam varius rhoncus faucibus. Etiam nec elit enim. Pellentesque a erat purus. Donec posuere metus elementum faucibus laoreet. Sed faucibus egestas porta. Vestibulum id risus nec purus semper posuere. Ut est enim, fermentum quis porta ut, rutrum et ex. Quisque ullamcorper quis dui eget bibendum.
-<br><br>
-In pharetra rhoncus risus ut dignissim. Quisque fermentum mi vitae lacus interdum aliquam. Quisque tempus nisi non augue varius mollis quis et turpis. Proin quis metus nisi. Donec tristique facilisis arcu, in efficitur quam blandit vel. Aliquam a mi orci. Nulla elementum odio eu tortor dictum feugiat. Mauris eget ullamcorper nisl. Donec sed felis at libero volutpat tempor. Suspendisse vel semper justo. Duis et iaculis metus.
-<br><br>
-Quisque ac suscipit nibh, in fringilla odio. Quisque placerat condimentum nisi ac tincidunt. Suspendisse laoreet, metus nec vehicula fermentum, dui massa rutrum leo, vitae aliquam nisi nunc in orci. Nulla auctor, sem eu commodo ullamcorper, diam justo tincidunt nulla, at posuere mauris quam sit amet risus. Sed quis consectetur eros. Sed luctus ex ut nisi semper cursus. Aliquam nec mi leo. Aliquam maximus urna non auctor tristique. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac tincidunt neque. Pellentesque tellus enim, placerat et sollicitudin ac, sagittis eu erat. Praesent non ligula ligula. Integer dapibus, diam sit amet tempor hendrerit, nisl ipsum pretium enim, sed hendrerit dui nulla quis sapien. Proin semper, metus nec vestibulum feugiat, diam tortor commodo tortor, consectetur euismod nisl tellus vel lectus. Sed commodo leo eros, nec vehicula arcu accumsan ut.
-<br><br>
-Suspendisse potenti. Praesent vel ligula nec nulla mollis lobortis sit amet a mi. Quisque consequat, nisi sit amet elementum maximus, risus nisi vehicula orci, at elementum ante ante interdum nulla. Integer non tortor ornare, scelerisque justo et, vehicula nulla. Nulla at urna quam. Vivamus porta elit eget ligula euismod, eget elementum mauris congue. Nulla facilisi.
-	<br><br>
-		</p>
-	</div>
-</body>
 
+
+
+</head>
+
+
+<body>
+
+<div id="start">
+<p>.</p>
+
+<div id="links">
+<ul>
+  <li><a href="#start" class="active">START</a></li><li> <a href="#sida2">SIDA2</a></li><li> <a href="#sida3">SIDA3</a></li>
+</ul>
+</div>
+<h1>Hållbar Utveckling</h1>
+
+
+
+</div>
+
+<div id="sida2" >
+
+<h2>Welcome welcome yes</h2>
+</div>
+
+<div id="sida3" >
+
+<h2>Welcome welco site 3</h2>
+</div>
+
+
+
+
+</body>
 </html>
