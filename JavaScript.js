@@ -1,6 +1,7 @@
 /*function setActive(){
 	var object document.getElementById("123");
 	object.className = "active";
+	//document.offsetTop
 }*/
 function distanceScrolledMellan(min , max){
 	"use strict";
@@ -13,24 +14,24 @@ function distanceScrolledMellan(min , max){
 }
 function myFunction() {
    "use strict";
-	if (distanceScrolledMellan(1,100))
+	if (document.documentElement.scrollTop>document.getElementById("befolkning").offsetTop && document.documentElement.scrollTop<document.getElementById("klimat").offsetTop )
 	{
         document.getElementById("Befolkning").className = "active";
     } else {
         document.getElementById("Befolkning").className = " ";
     }
-	if (distanceScrolledMellan(100,200)) 
+	if (document.documentElement.scrollTop>document.getElementById("klimat").offsetTop && document.documentElement.scrollTop<document.getElementById("energi").offsetTop) 
 	{
         document.getElementById("Klimat").className = "active";
     } else {
         document.getElementById("Klimat").className = " ";
     }
-	if (distanceScrolledMellan(200,300)) {
+	if (document.documentElement.scrollTop>document.getElementById("energi").offsetTop && document.documentElement.scrollTop<document.getElementById("teknik").offsetTop) {
         document.getElementById("Energi").className = "active";
     } else {
         document.getElementById("Energi").className = " ";
     }
-	if (distanceScrolledMellan(300,400)) {
+	if (document.documentElement.scrollTop>document.getElementById("teknik").offsetTop) {
         document.getElementById("Teknik").className = "active";
     } else {
         document.getElementById("Teknik").className = " ";
