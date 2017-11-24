@@ -1,0 +1,63 @@
+<DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="design.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<title>skoj</title>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+    $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+        window.location.hash = hash;
+      });
+    }
+  });
+});
+</script>
+
+
+
+</head>
+
+
+<body>
+
+<div id="start">
+<p>.</p>
+
+<div id="links">
+<ul>
+  <li><a href="#start" class="active">START</a></li><li> <a href="#sida2">SIDA2</a></li><li> <a href="#sida3">SIDA3</a></li>
+</ul>
+</div>
+<h1>Hållbar Utveckling</h1>
+
+
+
+</div>
+
+<div id="sida2" >
+
+<h2>Welcome welcome yes</h2>
+</div>
+
+<div id="sida3" >
+
+<h2>Welcome welco site 3</h2>
+</div>
+
+
+
+
+</body>
+</html>
