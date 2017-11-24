@@ -18,14 +18,14 @@ body{
 	height: 100%;
 	width: 100%;
 	background: #795548;
-
+	margin: 0;
 }
 
 #sida3 {
 	height: 100%;
 	width: 100%;
 	background: #92979b;
-
+	margin: 0;
 }
 
 #links {
@@ -78,6 +78,16 @@ li {
     float: left;
 }
 
+footer{
+	background: #4CAF50;
+	height: 100px;
+	margin-top: -16px;
+}
+
+.footer {
+	text-align: center;
+}
+
 li a {
     display: block;
     color: white;
@@ -97,8 +107,8 @@ li a:hover:not(.active) {
 @keyframes color-animation {
     0% {
        background: #111;
-    } 
+    }
     100% {
        background: #4CAF50;
-    } 
+    }
  }
