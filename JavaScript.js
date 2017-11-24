@@ -5,35 +5,36 @@
 }*/
 function distanceScrolledMellan(min , max){
 	"use strict";
-	if (document.documentElement.scrollTop > min && document.documentElement.scrollTop < max)
+	if (document.body.scrollTop+44 > min && document.body.scrollTop+44 < max)
 		{
 			return true;
 		}else{
 			return false;
 		}
 }
-function myFunction() {
+function setActive() {
    "use strict";
-	if (document.documentElement.scrollTop>document.getElementById("befolkning").offsetTop && document.documentElement.scrollTop<document.getElementById("klimat").offsetTop )
+	if (document.body.scrollTop+44>document.getElementById("Befolkning").offsetTop && document.body.scrollTop+44<document.getElementById("Energi").offsetTop )
 	{
-        document.getElementById("Befolkning").className = "active";
+        document.getElementById("befolkningg").className = "active";
     } else {
-        document.getElementById("Befolkning").className = " ";
+        document.getElementById("befolkningg").className = " ";
     }
-	if (document.documentElement.scrollTop>document.getElementById("klimat").offsetTop && document.documentElement.scrollTop<document.getElementById("energi").offsetTop) 
+	if (document.body.scrollTop+44>document.getElementById("Energi").offsetTop && document.body.scrollTop+44<document.getElementById("Klimat").offsetTop) 
 	{
-        document.getElementById("Klimat").className = "active";
+        document.getElementById("energii").className = "active";
     } else {
-        document.getElementById("Klimat").className = " ";
+        document.getElementById("energii").className = " ";
     }
-	if (document.documentElement.scrollTop>document.getElementById("energi").offsetTop && document.documentElement.scrollTop<document.getElementById("teknik").offsetTop) {
-        document.getElementById("Energi").className = "active";
+	if (document.body.scrollTop+44>document.getElementById("Klimat").offsetTop && document.body.scrollTop+44<document.getElementById("Teknik").offsetTop) 
+	{
+        document.getElementById("klimatt").className = "active";
     } else {
-        document.getElementById("Energi").className = " ";
+        document.getElementById("klimatt").className = " ";
     }
-	if (document.documentElement.scrollTop>document.getElementById("teknik").offsetTop) {
-        document.getElementById("Teknik").className = "active";
+	if (document.body.scrollTop+44>document.getElementById("Teknik").offsetTop) {
+        document.getElementById("teknikk").className = "active";
     } else {
-        document.getElementById("Teknik").className = " ";
+        document.getElementById("teknikk").className = " ";
     }
 }

@@ -14,17 +14,30 @@ body{
 
 }
 
-#sida2 {
+#Befolkning {
 	height: 100%;
 	width: 100%;
 	background: #795548;
 
 }
 
-#sida3 {
+#Energi {
 	height: 100%;
 	width: 100%;
 	background: #92979b;
+
+}
+
+#Klimat {
+	height: 100%;
+	width: 100%;
+	background: #06A100;
+
+}
+#Teknik {
+	height: 100%;
+	width: 100%;
+	background: #002CFF;
 
 }
 
@@ -63,13 +76,13 @@ h1{
 }
 ul {
     list-style-type: none;
-    margin: 0;
+    margin: 0 25%;
     padding: 0;
     overflow: hidden;
     background-color: #333;
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 50%;
 	text-align: center;
 
 }
@@ -82,7 +95,7 @@ li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 34px;
     text-decoration: none;
 }
 
