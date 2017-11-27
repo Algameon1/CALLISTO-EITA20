@@ -59,10 +59,23 @@ h1 {
 	width: 750px;
 	height: 100px;
 	color: white;
-	margin: 22% auto;
+	margin: 16% auto;
 	font-size: 80px;
 	text-align: center;
 	border: 2px solid white;
+}
+
+footer{
+	text-align: center;
+	color: white;
+	font-size: 14px;
+}
+
+.footer{
+	text-decoration: none;
+	color: white;
+	font-size: 16px;
+	padding: 10px;
 }
 
 @media only screen and (max-width : 800px){
@@ -72,6 +85,7 @@ h1{
 	font-size: 40px;
 	margin: 300px auto;
 }
+
 
 }
 ul {
