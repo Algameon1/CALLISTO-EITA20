@@ -149,3 +149,52 @@ li a:hover:not(.active) {
 	margin-top: 40px;
 	
 }
+
+mainBefolkning {
+ background: url(bildBak.jpg) fixed no-repeat;
+  background-size: cover;
+  padding-top: 5%;
+}
+
+mainEnergi {
+ background: url(bildBak.jpg) fixed no-repeat;
+  background-size: cover;
+  padding-top: 5%;
+}
+
+mainKilmat {
+ background: url(bildBak.jpg) fixed no-repeat;
+  background-size: cover;
+  padding-top: 5%;
+}
+
+mainTeknik {
+ background: url(bildBak.jpg) fixed no-repeat;
+  background-size: cover;
+  padding-top: 5%;
+}
+
+
+.frosted-glass {
+  width: 90%;
+  height: 90%;
+  background: inherit;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 2rem;
+  box-sizing: border-box;
+  box-shadow: 0 .5em 1em rgba(0,0,0,.3);
+}
+
+.frosted-glass::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0; right: 0; bottom: 0; left: 0;
+  background: inherit;
+  box-shadow: inset 0 0 3000px rgba(255,255,255,.7);
+  filter: blur(30px);
+  margin: -20px;
+}
