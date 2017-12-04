@@ -21,21 +21,26 @@ body{
 }
 
 #Energi {
-	height: 200%;
+	/*
+    height: 200%;
 	width: 100%;
 	margin: 0;
+    */
+
 }
 
 #Klimat {
-	height: 100%;
+	/*
+    height: 100%;
 	width: 100%;
-	
+	*/
+
 
 }
 #Teknik {
-	height: 100%;
+	/*height: 100%;
 	width: 100%;
-	
+	*/
 
 }
 
@@ -143,7 +148,8 @@ li a:hover:not(.active) {
 	width: 50%;
 	margin: 0 25%;	
 	font-size: 16px;
-    color: aliceblue;   
+    color: white ; 
+   
 }
 
 .text h4{
@@ -152,30 +158,28 @@ li a:hover:not(.active) {
 }
 
 .bef {
-        background: url(befolkning.jpg) fixed no-repeat;
-  background-size: cover;
-    height: 150%;
-    
+    background: url(befolkning.jpg) fixed no-repeat;
+    background-size: cover;
+    margin-bottom: 5%;
 }
 
 .ene {
- background: url(energi.jpg) fixed no-repeat;
-  background-size: cover;
-        height: 400%;
+    background: url(energi.jpg) fixed no-repeat;
+    background-size: cover;
+    margin-bottom: 5%;
+       
 }
 
 .kli {
- 
     background: url(klimat.jpg) fixed no-repeat;
-  background-size: cover;
-  padding-top: 5%;
-        height: 100%;
+    background-size: cover;
+    margin-bottom: 5%;      
 }
 
 .tek {
- background: url(bildBak.jpg) fixed no-repeat;
-  background-size: cover;
-        height: 200%;
+    background: url(bildBak.jpg) fixed no-repeat;
+    background-size: cover;
+    margin-bottom: 5%;    
 }
 
 
@@ -191,7 +195,6 @@ li a:hover:not(.active) {
     width: 70%;
     margin-bottom: -5%;
     margin-top: -5%;
-    height: 100%;
 }
 
 .frosted-glass::before {
@@ -205,6 +208,3 @@ li a:hover:not(.active) {
   margin: -20px;
 
 }
-.boxB {
-}
-
