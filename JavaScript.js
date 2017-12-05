@@ -38,14 +38,3 @@ function setActive() {
         document.getElementById("teknikk").className = " ";
     }
 }
-function BrowserDetection() {
-    alert("hello");
-    if (navigator.userAgent.search("MSIE") > 0) {
-        document.getElementsByClassName("frosted-glass").setAttribute("style", "box-shadow: inset 0 0 0 rgba(255,255,255, 0); -webkit-filter: blur(0px); -moz-filter: blur(0px); -o-filter: blur(0px); -ms-filter: blur(0px); filter: blur(0px); background-color: black;");
-    }
-    //Check if browser is Firefox 
-    else if (navigator.userAgent.search("Firefox") > 0) {
-        alert("aiodhqwoii");
-        document.getElementsByClassName("bef").setAttribute("link href="stylesheet"", "background: url(""); background-color: black;");    
-    }
-}
