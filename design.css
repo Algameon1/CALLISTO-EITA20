@@ -154,6 +154,7 @@ li a:hover:not(.active) {
 	
 }
 
+/*bef, ene, kli, tek backgrunds bild */
 .bef {
     background: url(befolkning.jpg) fixed no-repeat;
     background-size: cover;
@@ -179,6 +180,10 @@ li a:hover:not(.active) {
     margin-bottom: 5%;    
 }
 
+/*
+Frostat glas effekt box backom text.
+Används av webbläser som är baserade på chrome.
+*/
 .frosted-glass {
     background: inherit;
     position: relative;
@@ -193,6 +198,7 @@ li a:hover:not(.active) {
     margin-top: -5%;
 }
 
+/* Frostat glas  effekten */
 .frosted-glass::before {
     content: "";
     position: absolute;
@@ -203,6 +209,11 @@ li a:hover:not(.active) {
     filter: blur(30px);
     margin: -20px;
 }
+
+/*
+Svart box backom text.
+Används när webbläsaren inte är baserad på chrome.
+*/
 .blackBG {
     position: relative;
     z-index: 1;
@@ -210,7 +221,7 @@ li a:hover:not(.active) {
     margin: 15% ;
     padding: 2rem;
     box-sizing: border-box;
-    box-shadow: 0 .5em 0em rgba(0,0,0,.7);
+    box-shadow: 0 .5em .5em rgba(0,0,0,.7);
     width: 70%;
     margin-bottom: -5%;
     margin-top: -5%;

@@ -25,19 +25,16 @@
         </script>
     </head>
     <body>
+        <!-- 
+        När hemsidan starts kollar scriptet om webbläsaren är baserade på chrome.
+        Om det är det så gömmer den blackBG div:en 
+        Annars så gömmer den frosted-glas div:en och visar blackBg div:en.
+        --> 
         <script>
             window.onload = function() {
-                var blur = document.getElementsByClassName("frosted-glass");
-                var black = document.getElementsByClassName("blackBG");
-            
                 if (navigator.userAgent.search("Chrome") > 0) {
                     $(".blackBG").hide();
-                }
-                if (navigator.userAgent.search("MSIE") > 0) {
-                    $(".frosted-glass").hide();
-                    $(".blackBg").show;
-                }
-                if (navigator.userAgent.search("Firefox") > 0) {
+                } else {
                     $(".frosted-glass").hide();
                     $(".blackBg").show;
                 } 
