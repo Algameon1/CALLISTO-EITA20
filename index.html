@@ -34,12 +34,12 @@
             window.onload = function() {
                 if (navigator.userAgent.search("Chrome") > 0) {
                     $(".blackBG").hide();
+                } else if (navigator.userAgent.search("Safari") > 0) {
+                    $(".blackBG").hide();
                 } else {
                     $(".frosted-glass").hide();
                     $(".blackBg").show;
                 } 
-                
-                
             } ;
         </script>
 
