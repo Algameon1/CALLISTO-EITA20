@@ -125,6 +125,23 @@ li a:hover:not(.active) {
 	margin: 10px;
 }
 
+#earths{
+	width: 260px;
+	float: right;
+	margin: 10px;
+}
+
+#overshoot{
+	width: 450px;
+
+}
+
+#vagkraft{
+	width: 300px;
+	float: right;
+
+}
+
 #kli .text{
 
 
