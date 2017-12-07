@@ -143,41 +143,41 @@ li a:hover:not(.active) {
  }
 .text{
 	width: 50%;
-	margin: 0 25%;	
+	margin: 0 25%;
 	font-size: 16px;
-    color: white ; 
-   
+    color: white ;
+
 }
 
 .text h4{
 	margin-top: 40px;
-	
+
 }
 
 /*bef, ene, kli, tek backgrunds bild */
 .bef {
     background: url(befolkning.jpg) fixed no-repeat;
     background-size: cover;
-    margin-bottom: 5%;
+    margin: 5% 0;
 }
 
 .ene {
     background: url(energi.jpg) fixed no-repeat;
     background-size: cover;
     margin-bottom: 5%;
-       
+
 }
 
 .kli {
     background: url(klimat.jpg) fixed no-repeat;
     background-size: cover;
-    margin-bottom: 5%;      
+    margin-bottom: 5%;
 }
 
 .tek {
     background: url(teknik.jpeg) fixed no-repeat;
     background-size: cover;
-    margin-bottom: 5%;    
+    margin-bottom: 5%;
 }
 
 /*
