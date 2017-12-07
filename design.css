@@ -156,7 +156,7 @@ li a:hover:not(.active) {
 
 /*bef, ene, kli, tek backgrunds bild */
 #bef {
-    background: url(befolkning.jpg) fixed no-repeat;
+    background: url(bef.jpg) fixed no-repeat;
     background-size: cover;
     margin: 5% 0;
 }
@@ -169,7 +169,7 @@ li a:hover:not(.active) {
 }
 
 #kli {
-    background: url(klimat.jpg) fixed no-repeat;
+    background: url(kli.jpg) fixed no-repeat;
     background-size: cover;
     margin-bottom: 5%;
 }
