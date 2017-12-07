@@ -3,39 +3,7 @@ body{
 	padding: 0;
 }
 
-#start {
-    background: url("bildBak.jpg") no-repeat center center fixed;
-    background-size: cover;
-    width: 100% ;
-    height: 100%;
-	margin: 0;
-}
-
-#links {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 3;
-}
-
-h2 {
-	font-family: 'Roboto', sans-serif;
-	margin: 0 auto;
-	text-align: center;
-}
-
-h1 {
-	background: black;
-	font-family: 'Roboto', sans-serif;
-	width: 750px;
-	height: 100px;
-	color: white;
-	margin: 16% auto;
-	font-size: 80px;
-	text-align: center;
-	border: 2px solid white;
-}
-
+/*Footer*/
 footer{
 	text-align: center;
 	color: white;
@@ -49,15 +17,26 @@ footer{
 	padding: 10px;
 }
 
-@media only screen and (max-width : 800px){
-
-h1{
-	width: 300px;
-	font-size: 40px;
-	margin: 300px auto;
+footer{
+	background: #4CAF50;
+	height: 100px;
+	margin-top: -16px;
 }
 
+.footer {
+	text-align: center;
+}
 
+/*Nav-bar*/
+#links {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 3;
+}
+
+@media only screen and (max-width : 800px){
+    
 }
 ul {
     list-style-type: none;
@@ -76,16 +55,6 @@ ul {
 
 li {
     float: left;
-}
-
-footer{
-	background: #4CAF50;
-	height: 100px;
-	margin-top: -16px;
-}
-
-.footer {
-	text-align: center;
 }
 
 li a {
@@ -112,6 +81,8 @@ li a:hover:not(.active) {
        background: #4CAF50;
     }
  }
+
+/*Text design*/
 .text{
 	width: 50%;
 	margin: 0 25%;
@@ -120,31 +91,52 @@ li a:hover:not(.active) {
 		font-family: 'Open Sans', sans-serif;
 }
 
+h2 {
+	font-family: 'Roboto', sans-serif;
+	margin: 0 auto;
+	text-align: center;
+}
+
+h1 {
+	background: black;
+	font-family: 'Roboto', sans-serif;
+	width: 750px;
+	height: 100px;
+	color: white;
+	margin: 16% auto;
+	font-size: 80px;
+	text-align: center;
+	border: 2px solid white;
+}
+
+h1{
+	width: 300px;
+	font-size: 40px;
+	margin: 300px auto;
+}
+
+/*Bilder till texterna*/
 #graf{
-	width: 260px;
+	width: 50%;
 	float: right;
-	margin: 10px;
+	margin: 5%;
 }
 
 #earths{
-	width: 260px;
+	width: 50%;
 	float: right;
-	margin: 10px;
+    margin-top: 5%;
+    margin-bottom: 2.5%;
 }
 
 #overshoot{
-	width: 450px;
-
+	width: 100%;
+  margin-bottom: 2.5%;
 }
 
 #vagkraft{
-	width: 300px;
+	width: 45%;
 	float: right;
-
-}
-
-#kli .text{
-
 
 }
 
@@ -153,7 +145,15 @@ li a:hover:not(.active) {
 
 }
 
-/*bef, ene, kli, tek backgrunds bild */
+/*start, bef, ene, kli, tek backgrunds bild */
+#start {
+    background: url("bildBak.jpg") no-repeat center center fixed;
+    background-size: cover;
+    width: 100% ;
+    height: 100%;
+	margin: 0;
+}
+
 #bef {
     background: url(bef.jpg) fixed no-repeat;
     background-size: cover;
@@ -217,10 +217,9 @@ Används när webbläsaren inte är baserad på chrome.
 .blackBG {
     position: relative;
     z-index: 1;
-    overflow: hidden;
     margin: 13% ;
     padding: 2rem;
-    box-shadow: 0 .5em .5em rgba(0,0,0,.3);
+    box-shadow: 0 .5em 1em rgba(0,0,0,.3);
     width: 70%;
     margin-bottom: -5%;
     margin-top: -5%;
