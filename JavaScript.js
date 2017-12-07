@@ -1,18 +1,4 @@
-/*function setActive(){
-	var object document.getElementById("123");
-	object.className = "active";
-	//document.offsetTop
-}*/
-function distanceScrolledMellan(min , max){
-	"use strict";
-	if (document.body.scrollTop+44 > min && document.body.scrollTop+44 < max)
-		{
-			return true;
-		}else{
-			return false;
-		}
-}
-function setActive() {
+function setActive() { //Script som kollar hur långt användaren har scrollat på sidan. och om användaren har scrollat in på det avsnittet.
    "use strict";
 	if (document.body.scrollTop+44>document.getElementById("bef").offsetTop && document.body.scrollTop+44<document.getElementById("ene").offsetTop )
 	{
