@@ -192,7 +192,7 @@ Används av webbläser som är baserade på chrome.
     margin: 15% ;
     padding: 2rem;
     box-sizing: border-box;
-    box-shadow: 0 .5em 1em rgba(0,0,0,.7);
+    box-shadow: 0 .2em 1em rgba(0,0,0,.7);
     width: 70%;
     margin-bottom: -5%;
     margin-top: -5%;
