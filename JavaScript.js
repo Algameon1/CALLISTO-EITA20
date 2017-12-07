@@ -14,25 +14,25 @@ function distanceScrolledMellan(min , max){
 }
 function setActive() {
    "use strict";
-	if (document.body.scrollTop+44>document.getElementById("Befolkning").offsetTop && document.body.scrollTop+44<document.getElementById("Energi").offsetTop )
+	if (document.body.scrollTop+44>document.getElementById("bef").offsetTop && document.body.scrollTop+44<document.getElementById("ene").offsetTop )
 	{
         document.getElementById("befolkningg").className = "active";
     } else {
         document.getElementById("befolkningg").className = " ";
     }
-	if (document.body.scrollTop+44>document.getElementById("Energi").offsetTop && document.body.scrollTop+44<document.getElementById("Klimat").offsetTop) 
+	if (document.body.scrollTop+44>document.getElementById("ene").offsetTop && document.body.scrollTop+44<document.getElementById("kli").offsetTop) 
 	{
         document.getElementById("energii").className = "active";
     } else {
         document.getElementById("energii").className = " ";
     }
-	if (document.body.scrollTop+44>document.getElementById("Klimat").offsetTop && document.body.scrollTop+44<document.getElementById("Teknik").offsetTop) 
+	if (document.body.scrollTop+44>document.getElementById("kli").offsetTop && document.body.scrollTop+44<document.getElementById("tek").offsetTop) 
 	{
         document.getElementById("klimatt").className = "active";
     } else {
         document.getElementById("klimatt").className = " ";
     }
-	if (document.body.scrollTop+44>document.getElementById("Teknik").offsetTop) {
+	if (document.body.scrollTop+44>document.getElementById("tek").offsetTop) {
         document.getElementById("teknikk").className = "active";
     } else {
         document.getElementById("teknikk").className = " ";
