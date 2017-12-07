@@ -129,6 +129,7 @@ li a:hover:not(.active) {
     background: url(bef.jpg) fixed no-repeat;
     background-size: cover;
     margin: 5% 0;
+    z-index: -1;
 }
 
 #ene {
@@ -190,10 +191,9 @@ Används när webbläsaren inte är baserad på chrome.
     overflow: hidden;
     margin: 15% ;
     padding: 2rem;
-    box-sizing: border-box;
     box-shadow: 0 .5em .5em rgba(0,0,0,.7);
     width: 70%;
     margin-bottom: -5%;
     margin-top: -5%;
-    background-color: #111;
+    background-color: #333;
 }
