@@ -119,6 +119,17 @@ li a:hover:not(.active) {
 		font-family: 'Open Sans', sans-serif;
 }
 
+#graf{
+	width: 260px;
+	float: right;
+	margin: 10px;
+}
+
+#kli .text{
+
+
+}
+
 .text h4{
 	margin-top: 40px;
 
